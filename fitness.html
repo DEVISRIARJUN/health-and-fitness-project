@@ -1,0 +1,196 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devi Sri Arjun Health Tips</title>
+    <link rel="stylesheet" href="fitness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Devi Sri Arjun</h1>
+            <p>Health & Fitness Coach</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#tips">Health Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Transform Your Life</h2>
+                <p>Get fit, stay healthy, and feel amazing with personalized fitness guidance</p>
+                <button class="cta-button">Start Your Journey</button>
+            </div>
+        </section>
+
+        <section id="daily-tip" class="daily-tip">
+            <h2>Today's Health Tip</h2>
+            <div class="tip-container">
+                <p class="tip-text">"Stay hydrated throughout the day. Drink at least 8 glasses of water to maintain optimal body function and energy levels."</p>
+                <button id="new-tip-btn">Get Another Tip</button>
+            </div>
+        </section>
+
+        <section id="workouts" class="workouts">
+            <h2>Daily Workout Plans</h2>
+            <div class="workout-tabs">
+                <button class="tab-btn active" data-target="beginner">Beginner</button>
+                <button class="tab-btn" data-target="intermediate">Intermediate</button>
+                <button class="tab-btn" data-target="advanced">Advanced</button>
+            </div>
+            
+            <div class="workout-content">
+                <div id="beginner" class="workout-plan active">
+                    <h3>Beginner Full Body Workout</h3>
+                    <ul>
+                        <li>Bodyweight Squats - 3 sets of 10 reps</li>
+                        <li>Push-ups (knees or wall) - 3 sets of 8 reps</li>
+                        <li>Plank - 3 sets of 20 seconds</li>
+                        <li>Walking Lunges - 2 sets of 8 reps per leg</li>
+                        <li>Superman - 2 sets of 10 reps</li>
+                    </ul>
+                </div>
+                
+                <div id="intermediate" class="workout-plan">
+                    <h3>Intermediate Strength Training</h3>
+                    <ul>
+                        <li>Goblet Squats - 4 sets of 12 reps</li>
+                        <li>Dumbbell Bench Press - 4 sets of 10 reps</li>
+                        <li>Bent-over Rows - 3 sets of 12 reps</li>
+                        <li>Romanian Deadlifts - 3 sets of 10 reps</li>
+                        <li>Side Plank - 3 sets of 30 seconds per side</li>
+                    </ul>
+                </div>
+                
+                <div id="advanced" class="workout-plan">
+                    <h3>Advanced HIIT Routine</h3>
+                    <ul>
+                        <li>Burpees - 45 seconds, 15 seconds rest</li>
+                        <li>Jump Squats - 45 seconds, 15 seconds rest</li>
+                        <li>Mountain Climbers - 45 seconds, 15 seconds rest</li>
+                        <li>Box Jumps - 45 seconds, 15 seconds rest</li>
+                        <li>Plank to Push-up - 45 seconds, 15 seconds rest</li>
+                        <li>Repeat circuit 3-4 times</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercises" class="exercise-demo">
+            <h2>Exercise Demonstrations</h2>
+            <div class="exercise-gallery">
+                <div class="exercise-card">
+                    <div class="exercise-img" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Perfect Push-up</h3>
+                    <button class="view-demo" data-exercise="pushup">View Demo</button>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img" style="background-image: url('https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Proper Squat Form</h3>
+                    <button class="view-demo" data-exercise="squat">View Demo</button>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img" style="background-image: url('https://images.unsplash.com/photo-1571019614243-c778b68a4ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3>Plank Variations</h3>
+                    <button class="view-demo" data-exercise="plank">View Demo</button>
+                </div>
+            </div>
+            
+            <div id="demo-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3 id="modal-title">Exercise Demo</h3>
+                    <div id="modal-video" class="video-placeholder"></div>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutrition" class="nutrition">
+            <h2>Nutrition Tips</h2>
+            <div class="nutrition-cards">
+                <div class="nutrition-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Balanced Diet</h3>
+                    <p>Include proteins, carbs, and healthy fats in every meal for sustained energy.</p>
+                </div>
+                <div class="nutrition-card">
+                    <i class="fas fa-glass-whiskey"></i>
+                    <h3>Hydration</h3>
+                    <p>Drink at least 2-3 liters of water daily. More if you're active.</p>
+                </div>
+                <div class="nutrition-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Meal Timing</h3>
+                    <p>Eat every 3-4 hours to maintain metabolism and energy levels.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="health-tips">
+            <h2>Health & Wellness Tips</h2>
+            <div class="tips-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">Sleep Quality <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Aim for 7-9 hours of quality sleep each night. Maintain a consistent sleep schedule, keep your bedroom cool and dark, and avoid screens 1 hour before bedtime.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Stress Management <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Practice deep breathing exercises, meditation, or yoga. Take regular breaks during work, and make time for activities you enjoy.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Posture Correction <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Sit with your back straight, shoulders back, and feet flat on the floor. Take breaks every 30 minutes to stand and stretch if you sit for long periods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Devi Sri Arjun</h3>
+                <p>Your personal health and fitness coach dedicated to helping you achieve your wellness goals.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@devisriarjun.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Devi Sri Arjun Health Tips. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="fitness.js"></script>
+</body>
+</html>
